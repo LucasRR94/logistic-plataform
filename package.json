@@ -1,0 +1,82 @@
+{
+  "name": "logistic-plataform",
+  "version": "1.0.0",
+  "description": "This is a poc of logistic product",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "antd": "^5.11.4",
+    "bootstrap": "^5.3.2",
+    "dotenv": "^16.4.5",
+    "flowbite": "^2.2.0",
+    "i18next": "^23.7.11",
+    "i18next-resources-to-backend": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "localforage": "^1.10.0",
+    "lodash": "^4.17.21",
+    "match-sorter": "^6.3.1",
+    "next": "14.0.3",
+    "next-auth": "^4.24.7",
+    "next-i18next": "^15.1.1",
+    "next-language-detector": "^1.1.0",
+    "pg": "^8.11.5",
+    "react": "^18",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18",
+    "react-dropdown-select": "^4.10.0",
+    "react-highlight-words": "^0.20.0",
+    "react-hook-form": "^7.49.2",
+    "react-horizontal-scrolling-menu": "^4.1.1",
+    "react-i18next": "^13.5.0",
+    "react-icons": "^4.12.0",
+    "react-table": "^7.8.0",
+    "react-to-print": "^2.14.15",
+    "smart-webcomponents-react": "^17.1.0",
+    "sort-by": "^0.0.2",
+    "tw-elements": "^1.0.0",
+    "zod": "^3.23.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.45.0",
+    "eslint-config-next": "14.0.3",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "flowbite-react": "^0.6.4",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "vite": "^4.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasRR94/logistic-plataform.git"
+  },
+  "keywords": [
+    "logistics",
+    "nextjs",
+    "nodejs",
+    "reactjs"
+  ],
+  "author": "Lucas Rocha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucasRR94/logistic-plataform/issues"
+  },
+  "homepage": "https://github.com/LucasRR94/logistic-plataform#readme"
+}

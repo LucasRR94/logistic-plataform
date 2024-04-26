@@ -1,0 +1,39 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:14.2-alpine
+    container_name: logistic-db
+    command: "postgres -c 'max_connections=500'"
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    networks:
+      - connect-db
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  nextjs-app:
+    image: node:18-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    networks:
+      - connect-db
+    depends_on:
+      - postgres
+
+networks:
+  connect-db:
+    driver: bridge
+
+volumes:  
+  db-data:
